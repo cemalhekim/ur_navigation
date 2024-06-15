@@ -10,7 +10,7 @@ Create a new package for your project. We'll name it ur5e_navigation.
 
 Write the codes on "main.bash" on your terminal.
 
-## Step 3: Step 3: Define Dependencies
+## Step 3: Define Dependencies
 
 Edit the package.xml file to include the necessary dependencies
 

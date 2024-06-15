@@ -8,7 +8,11 @@ First, ensure you have ROS 2 Iron and MoveIt installed on your system. Follow th
 
 Create a new package for your project. We'll name it ur5e_navigation.
 
-Write the codes on "main.bash" on your terminal.
+to the bash ->
+
+source /opt/ros/iron/setup.bash
+ros2 pkg create --build-type ament_python ur5e_navigation
+cd ur5e_navigation
 
 ## Step 3: Define Dependencies
 
@@ -26,3 +30,22 @@ Now, let's implement a service that the node can provide. This service can be us
 
 Create a file navigation_service.py inside ur5e_navigation/ur5e_navigation/.
 
+## Step 6: Implement an Action
+
+Actions are used for long-running tasks. Let's implement an action for reaching a specific pose.
+
+Create a file reach_pose_action.py inside ur5e_navigation/ur5e_navigation/.
+
+## Step 7: Integrate Everything and Launch
+
+Now, integrate everything in a launch file. Create a directory launch in ur5e_navigation and create a file ur5e_navigation_launch.py.
+
+## Step 8: Build and Run
+
+Make sure to add the necessary entry points in setup.py.
+
+Finally, build the package ->
+
+colcon build
+source install/setup.bash
+ros2 launch ur5e_navigation ur5e_navigation_launch.py

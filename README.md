@@ -19,3 +19,10 @@ Edit the package.xml file to include the necessary dependencies
 Create a directory for your nodes and implement a Lifecycle Node. This node will manage the lifecycle states of your application.
 
 Create a file lifecycle_node.py inside ur5e_navigation/ur5e_navigation/.
+
+## Step 5: Implement a Service
+
+Now, let's implement a service that the node can provide. This service can be used to control the robot's movements.
+
+Create a file navigation_service.py inside ur5e_navigation/ur5e_navigation/.
+

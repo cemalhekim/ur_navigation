@@ -8,11 +8,11 @@ First, ensure you have ROS 2 Iron and MoveIt installed on your system. Follow th
 
 Create a new package for your project. We'll name it ur5e_navigation.
 
-to the bash ->
-
+```bash
 source /opt/ros/iron/setup.bash
 ros2 pkg create --build-type ament_python ur5e_navigation
 cd ur5e_navigation
+```
 
 ## Step 3: Define Dependencies
 
@@ -46,6 +46,8 @@ Make sure to add the necessary entry points in setup.py.
 
 Finally, build the package ->
 
+```bash
 colcon build
 source install/setup.bash
 ros2 launch ur5e_navigation ur5e_navigation_launch.py
+```

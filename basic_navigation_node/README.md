@@ -30,11 +30,29 @@ MoveGroupCommander: Interfaces with a planning group (in this case, the robot's 
 
 Update setup.py to include the new node.
 
+The setup script for the ur5e_navigation package. This script defines the package metadata and the installation details, including dependencies and entry points for executable scripts.
+
+Purpose:
+To provide metadata about the package (name, version, description, maintainer, etc.).
+To define the package dependencies that need to be installed.
+To specify the entry points for the executables included in the package.
+
 ## Step 6: Create a Launch File
 
 Create a directory named launch in ur5e_navigation and create a file basic_navigation_launch.py.
 
 File: basic_navigation_launch.py
+
+This is the launch file used to start the basic navigation node. The launch file is responsible for initializing and running the basic_navigation_node, which handles the navigation logic.
+
+Purpose:
+To launch the basic_navigation_node and ensure it starts correctly.
+To specify the package and executable details for launching the node.
+To provide configuration for the node's name and output settings.
+
+Explanation:
+LaunchDescription: A container for the launch actions.
+Node: Represents a ROS 2 node to be launched. Specifies the package name (ur5e_navigation), the executable (basic_navigation_node), and configures the output to be shown on the screen.
 
 ## Step 7: Build and Run
 
